@@ -202,7 +202,7 @@ This project is licensed under the MIT License.
 
 **Naman Manjhi**
 
-🎓 BCA Student
+🎓 B.Tech Student
 
 💻 Passionate about AI, Web Development, and Machine Learning.
 
