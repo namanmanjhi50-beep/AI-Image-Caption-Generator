@@ -134,12 +134,11 @@ http://127.0.0.1:5000
 
 ### 📤 Image Upload
 
-![alt text](<Screenshot 2026-06-30 at 22.39.08.png>)
----
+![alt text](<screenshots/Screenshot 2026-06-30 at 22.39.08.png>)
 
 ### 🤖 Generated Caption
 
-![alt text](<Screenshot 2026-06-30 at 22.39.31.png>)
+![alt text](<screenshots/Screenshot 2026-06-30 at 22.39.31.png>)
 ---
 
 ## 💡 How It Works
