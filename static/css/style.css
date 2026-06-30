@@ -1,0 +1,1048 @@
+/* ==========================================
+   AI Caption Studio
+   style.css
+========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: #07111f;
+
+    color: white;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    position: relative;
+
+}
+
+/* ==========================================
+   Animated Background
+========================================== */
+
+.background {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(135deg,
+            #08111d,
+            #101f39,
+            #1f3b72);
+
+}
+
+.background::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    border-radius: 50%;
+
+    background: rgba(78, 112, 255, .22);
+
+    filter: blur(90px);
+
+    top: -180px;
+
+    left: -120px;
+
+    animation: float1 10s infinite alternate ease-in-out;
+
+}
+
+.background::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(145, 92, 255, .22);
+
+    filter: blur(100px);
+
+    bottom: -150px;
+
+    right: -120px;
+
+    animation: float2 12s infinite alternate ease-in-out;
+
+}
+
+@keyframes float1 {
+
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(80px, 70px);
+    }
+
+}
+
+@keyframes float2 {
+
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-80px, -70px);
+    }
+
+}
+
+/* ==========================================
+   Navbar
+========================================== */
+
+nav {
+
+    width: 100%;
+
+    padding: 25px 60px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #fff;
+
+}
+
+#themeToggle {
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, .12);
+
+    color: white;
+
+    font-size: 20px;
+
+    transition: .3s;
+
+}
+
+#themeToggle:hover {
+
+    transform: rotate(25deg) scale(1.1);
+
+    background: #3b82f6;
+
+}
+
+/* ==========================================
+   Hero
+========================================== */
+
+.hero {
+
+    text-align: center;
+
+    margin: 20px auto 50px;
+
+    width: min(900px, 90%);
+
+}
+
+.hero h1 {
+    font-size: 54px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ffffff, #8ec5ff);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+
+    font-size: 19px;
+
+    color: #d5d8df;
+
+    line-height: 1.8;
+
+}
+
+/* ==========================================
+   Main Grid
+========================================== */
+
+.main-grid {
+
+    width: 92%;
+
+    max-width: 1500px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    padding-bottom: 50px;
+
+}
+
+.left-panel,
+.right-panel {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+/* ==========================================
+   Glass Cards
+========================================== */
+
+.glass-card {
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    transition: .35s;
+
+    box-shadow:
+
+        0 12px 35px rgba(0, 0, 0, .35);
+
+}
+
+.glass-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+
+        0 18px 45px rgba(0, 0, 0, .45);
+
+}
+
+.glass-card h2 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 24px;
+
+    margin-bottom: 22px;
+
+}
+
+/* ==========================================
+   Upload Area
+========================================== */
+
+.upload-area {
+
+    border: 2px dashed rgba(255, 255, 255, .25);
+
+    border-radius: 20px;
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+}
+
+.upload-area:hover {
+
+    border-color: #4f9dff;
+
+    background: rgba(79, 157, 255, .08);
+
+    transform: translateY(-3px);
+
+}
+
+.upload-icon {
+
+    font-size: 70px;
+
+    color: #7ec8ff;
+
+    margin-bottom: 20px;
+
+}
+
+.upload-area h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+}
+
+.upload-area p {
+
+    color: #c8d3e0;
+
+    font-size: 16px;
+
+}
+
+/* ==========================================
+   Preview Image
+========================================== */
+
+.preview-wrapper {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+#previewImage {
+
+    width: 100%;
+
+    max-height: 420px;
+
+    object-fit: contain;
+
+    border-radius: 18px;
+
+    display: none;
+
+    border: 2px solid rgba(255, 255, 255, .15);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
+
+}
+
+/* ==========================================
+   Generate Button
+========================================== */
+
+#generateBtn {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: white;
+
+    background: linear-gradient(135deg, #3b82f6, #7c3aed);
+
+    transition: .35s;
+
+}
+
+#generateBtn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(59, 130, 246, .4);
+
+}
+
+/* ==========================================
+   Loading
+========================================== */
+
+.loading {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.spinner {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: auto;
+
+    border: 6px solid rgba(255, 255, 255, .2);
+
+    border-top: 6px solid #4f9dff;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+   Result Cards
+========================================== */
+
+.card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.card-header h2 {
+
+    font-size: 24px;
+
+}
+
+#caption,
+#instagramCaption {
+
+    line-height: 1.9;
+
+    font-size: 17px;
+
+    color: #eef3ff;
+
+}
+
+/* ==========================================
+   Copy Button
+========================================== */
+
+.copy-btn {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, .12);
+
+    color: white;
+
+    transition: .3s;
+
+}
+
+.copy-btn:hover {
+
+    background: #2563eb;
+
+    transform: scale(1.08);
+
+}
+
+/* ==========================================
+   Hashtags
+========================================== */
+
+#hashtags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+#hashtags span {
+
+    background: #2563eb;
+
+    padding: 10px 16px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+}
+
+/* ==========================================
+   Emoji Box
+========================================== */
+
+#emojis {
+
+    font-size: 32px;
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+/* ==========================================
+   Info Grid
+========================================== */
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+.info-box {
+
+    background: rgba(255, 255, 255, .05);
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+}
+
+.info-box span {
+
+    display: block;
+
+    color: #bfc8d8;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+}
+
+.info-box strong {
+
+    font-size: 18px;
+
+}
+
+/* ==========================================
+   Action Buttons
+========================================== */
+
+.action-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+.action-buttons button {
+
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: white;
+
+    transition: .35s;
+
+}
+
+#downloadBtn {
+
+    background: #10b981;
+
+}
+
+#downloadBtn:hover {
+
+    background: #059669;
+
+}
+
+#clearBtn {
+
+    background: #ef4444;
+
+}
+
+#clearBtn:hover {
+
+    background: #dc2626;
+
+}
+
+/* ==========================================
+   Toast Notification
+========================================== */
+
+.toast {
+
+    position: fixed;
+
+    top: 30px;
+
+    right: 30px;
+
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+
+    color: white;
+
+    padding: 16px 24px;
+
+    border-radius: 14px;
+
+    font-weight: 600;
+
+    opacity: 0;
+
+    transform: translateX(120%);
+
+    transition: all .4s ease;
+
+    z-index: 9999;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+
+}
+
+.toast.show {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer {
+
+    margin-top: 50px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: #cbd5e1;
+
+    font-size: 15px;
+
+}
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #0f172a;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #3b82f6;
+
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #2563eb;
+
+}
+
+/* ==========================================
+   Floating Animation
+========================================== */
+
+.glass-card {
+
+    animation: fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   Dark Mode
+========================================== */
+
+body.light {
+
+    background: #f4f7fb;
+
+    color: #111827;
+
+}
+
+body.light .background {
+
+    background: linear-gradient(135deg,
+            #dbeafe,
+            #eff6ff,
+            #ffffff);
+
+}
+
+body.light .glass-card {
+
+    background: rgba(255, 255, 255, .9);
+
+    color: #111827;
+
+    border: 1px solid rgba(0, 0, 0, .08);
+
+}
+
+body.light p,
+body.light span {
+
+    color: #374151;
+
+}
+
+body.light .info-box {
+
+    background: #f3f4f6;
+
+}
+
+body.light .upload-area {
+
+    border-color: #93c5fd;
+
+}
+
+body.light .logo {
+
+    color: #111827;
+
+}
+
+body.light .hero h1 {
+
+    background: linear-gradient(90deg,
+            #2563eb,
+            #7c3aed);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* ==========================================
+   Responsive Design
+========================================== */
+
+@media(max-width:1200px) {
+
+    .main-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    nav {
+
+        padding: 20px;
+
+    }
+
+    .logo {
+
+        font-size: 22px;
+
+    }
+
+    .hero {
+
+        margin-top: 20px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 36px;
+
+    }
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+    .glass-card {
+
+        padding: 20px;
+
+    }
+
+    .upload-area {
+
+        padding: 30px 15px;
+
+    }
+
+    .upload-icon {
+
+        font-size: 55px;
+
+    }
+
+    .action-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .info-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .card-header h2 {
+
+        font-size: 20px;
+
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .hero h1 {
+
+        font-size: 30px;
+
+    }
+
+    .hero p {
+
+        font-size: 15px;
+
+    }
+
+    #generateBtn {
+
+        font-size: 16px;
+
+    }
+
+    .action-buttons button {
+
+        font-size: 15px;
+
+    }
+
+    .toast {
+
+        left: 20px;
+
+        right: 20px;
+
+        top: 20px;
+
+        transform: translateY(-120%);
+
+    }
+
+    .toast.show {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   Hover Effects
+========================================== */
+
+button {
+
+    transition: .3s ease;
+
+}
+
+button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+button:active {
+
+    transform: scale(.97);
+
+}
+
+img {
+
+    transition: .4s;
+
+}
+
+#previewImage:hover {
+
+    transform: scale(1.02);
+
+}
+
+/* ==========================================
+   Selection Color
+========================================== */
+
+::selection {
+
+    background: #3b82f6;
+
+    color: white;
+
+}
