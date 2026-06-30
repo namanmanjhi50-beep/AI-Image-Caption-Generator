@@ -129,18 +129,18 @@ http://127.0.0.1:5000
 
 ### 🏠 Home Page
 
-![alt text](<Screenshot 2026-06-30 at 22.37.04.png>)
+![alt text](<Screenshot 2026-06-30 at 22.38.03.png>)
 
 ---
 
 ### 📤 Image Upload
 
-/Users/goluu/Desktop/Screenshot 2026-06-30 at 22.38.03.png
+![alt text](<Screenshot 2026-06-30 at 22.39.08.png>)
 ---
 
 ### 🤖 Generated Caption
 
-/Users/goluu/Desktop/Screenshot 2026-06-30 at 22.39.08.png
+![alt text](<Screenshot 2026-06-30 at 22.39.31.png>)
 ---
 
 ## 💡 How It Works
