@@ -135,14 +135,12 @@ http://127.0.0.1:5000
 
 ### 📤 Image Upload
 
-_Add a screenshot here_
-
+/Users/goluu/Desktop/Screenshot 2026-06-30 at 22.38.03.png
 ---
 
 ### 🤖 Generated Caption
 
-_Add a screenshot here_
-
+/Users/goluu/Desktop/Screenshot 2026-06-30 at 22.39.08.png
 ---
 
 ## 💡 How It Works
