@@ -129,8 +129,7 @@ http://127.0.0.1:5000
 
 ### 🏠 Home Page
 
-![alt text](<Screenshot 2026-06-30 at 22.38.03.png>)
-
+![alt text](<screenshots/Screenshot 2026-06-30 at 22.38.03.png>)
 ---
 
 ### 📤 Image Upload
